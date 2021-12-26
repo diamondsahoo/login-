@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.svg{
+  width: 40px;
+  height: 40px;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c{
+  flex-flow: column;
+}
+body{
+ width: 100vw;
+ min-height: 100vh;
+ background-color: #ddd;
+ 
+ --outShade:
+ inset -2px -2px 1px #0000003d,
+ inset 2px 2px 1px #fff;
+ --inShade:
+ inset 2px 2px 1px #0000003d,
+ inset -2px -2px 1px #fff;
+}
+.top{
+  margin-bottom: 50px;
+}
+.main{
+  padding: 30px;
+  box-shadow: var(--outShade);
+  border-radius: 20px;
+  background: #ededed;
+}
+.top .ic{
+  margin: 0 50px;
+  padding: 20px;
+  border-radius: 50%;
+  background: #dedede;
+  box-shadow: var(--inShade);
+}
+.top .ic:hover{
+  box-shadow: var(--outShade);
+}
+.srhBox:hover{
+  box-shadow: var(--outShade);
+}
+.srhBox {
+  border-radius: 99px;
+  box-shadow: var(--inShade);
+  background: #dedede;
+  align-items: stretch;
+}
+.srhBox input{
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1.1em;
+}
+.srhBox .icn .svg{
+  width: 30px;
+  height: 30px;
+}
+.srhBox .icn{
+  padding: 10px;
+}
+#srhIc{
+  padding: 0 15px;
+  cursor: pointer;
+}
